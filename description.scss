@@ -1,0 +1,32 @@
+.description {
+	margin: 270px auto 0 auto;
+	width: $mobilewidth;
+	height: 1000px;
+	text-align: center;
+}
+
+.description__intro {
+	margin: 45px auto 0 auto;
+	padding: 0;
+	width: 205px;
+	text-align: center;
+}
+
+@media (min-width: $tabletwidth){
+	
+	.description {
+		width: $tabletwidth;
+	}
+
+	.description__intro {
+		// font-size: 40px;
+		width: 620px;
+	}
+}
+
+@media (min-width: $desktopwidth){
+	.description {
+		width: $desktopwidth;
+		width: 820px;
+	}
+}
