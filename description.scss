@@ -3,6 +3,7 @@
 	width: $mobilewidth;
 	height: 1000px;
 	text-align: center;
+	border: 1px solid red;
 }
 
 .description__intro {
@@ -12,10 +13,18 @@
 	text-align: center;
 }
 
+.description__image {
+	margin-bottom: 5px;
+	width: 150px;
+	height: 280px;
+	border: 1px solid green;
+}
+
 @media (min-width: $tabletwidth){
 	
 	.description {
 		width: $tabletwidth;
+		height: auto;
 	}
 
 	.description__intro {
@@ -27,6 +36,5 @@
 @media (min-width: $desktopwidth){
 	.description {
 		width: $desktopwidth;
-		width: 820px;
 	}
 }
