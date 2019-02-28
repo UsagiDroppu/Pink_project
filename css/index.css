@@ -1,10 +1,12 @@
 body {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  font-family: Open Sans, Arial, sans-serif; }
 
 .main-header {
   width: 320px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-color: #283645; }
 
 .main-menu {
   margin: 0;
@@ -13,18 +15,42 @@ body {
 
 .main-menu__item {
   width: 320px;
-  border: 1px solid black;
-  display: flex; }
+  display: flex;
+  box-shadow: 0 1px 0px #000000, 0 2px 0px #485461; }
+
+.main-menu__item:last-child {
+  box-shadow: 0 1px 0px #000000;
+  margin: 0 0 1px 0; }
 
 .main-menu__link {
   height: 65px;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-grow: 1; }
+  flex-grow: 1;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none; }
 
 .main-menu__item--logo {
   height: 70px; }
+
+.main-menu__logo {
+  margin: 20px 0 0 20px;
+  background: url("../img/logotype-white-mobile.png");
+  width: 75px;
+  height: 22px; }
+
+.main-menu__item--logo {
+  position: relative; }
+
+.main-menu__close {
+  position: absolute;
+  right: 20px;
+  top: 20px; }
 
 @media (min-width: 660px) {
   .main-header {
@@ -32,7 +58,15 @@ body {
   .main-menu__item {
     width: 660px; }
   .main-menu__item--logo {
-    height: 110px; } }
+    height: 110px; }
+  .main-menu__logo {
+    margin: 25px 0 0 20px;
+    background: url("../img/logotype-white-tablet.png") no-repeat;
+    width: 147px;
+    height: 40px; }
+  .main-menu__close {
+    right: 20px;
+    top: 45px; } }
 
 @media (min-width: 1200px) {
   .main-header {
@@ -41,18 +75,31 @@ body {
   .main-menu {
     position: absolute;
     display: flex;
-    margin: 0 130px;
+    z-index: 2;
+    margin: 0;
+    padding: 0 130px;
+    background-color: rgba(0, 0, 0, 0.3);
     width: 940px;
     justify-content: space-between; }
   .main-menu__item {
-    width: auto; }
+    width: auto;
+    align-items: center;
+    height: 110px;
+    box-shadow: none; }
   .main-menu__link {
-    flex-grow: 0; }
-  .main-menu__item {
-    height: 110px; }
-  .main-menu__item--logo {
-    margin-right: 90px;
-    width: 150px; } }
+    flex-grow: 0;
+    text-transform: none;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400; }
+  .main-menu__logo {
+    align-self: flex-start;
+    margin: 20px 0 0 0;
+    background: url("../img/logotype-white-desktop.png") no-repeat;
+    width: 147px;
+    height: 40px; }
+  .main-menu__close {
+    display: none; } }
 
 .intro__slogan {
   display: none; }
@@ -63,7 +110,7 @@ body {
   height: 395px;
   width: 320px;
   position: relative;
-  border: 1px solid red; }
+  background: url("../img/iphone-5-in-hand.jpg") no-repeat top; }
 
 .intro__download {
   margin: 0;
@@ -72,30 +119,121 @@ body {
   width: 320px;
   position: absolute;
   bottom: -270px;
-  border: 1px solid blue; }
+  background-color: #283645; }
+
+.intro__download-link {
+  display: flex;
+  margin: 30px auto 0 auto;
+  border-radius: 50px;
+  width: 275px;
+  height: 50px;
+  border: 3px solid white;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: #ffffff;
+  text-decoration: none; }
 
 @media (min-width: 660px) {
   .intro {
     width: 660px;
-    height: 620px; }
+    height: 620px;
+    background: url("../img/iphone-6.jpg") no-repeat top;
+    background-size: cover; }
   .intro__download {
     position: static;
+    height: auto;
     width: 300px;
-    height: 405px;
-    margin-left: 20px;
-    margin-top: 105px; }
+    left: 20px;
+    top: 105px;
+    background: none; }
   .intro__slogan {
-    display: inline; } }
+    display: block;
+    margin: 0 auto;
+    padding-top: 80px;
+    width: 200px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: auto;
+    color: #ffffff; } }
 
 @media (min-width: 1200px) {
   .intro {
+    margin: 0;
+    padding: 0;
     width: 1200px;
-    height: 850px; }
+    height: 850px;
+    position: static;
+    background: url("../img/iphone-7.jpg") no-repeat top; }
   .intro__download {
-    width: 385px;
-    height: 500px;
-    margin-left: 130px;
-    margin-top: 230px; } }
+    padding: 215px 0 0 130px;
+    position: static;
+    height: auto;
+    width: 300px;
+    margin: 0; }
+  .intro__slogan {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 240px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: auto;
+    color: #ffffff; }
+  .intro__download-link {
+    margin: 60px auto 0 auto; } }
+
+.system {
+  margin: 0 auto;
+  text-align: center;
+  width: 280px; }
+
+.system__logos {
+  margin: 30px auto 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 205px;
+  height: 55px;
+  list-style: none;
+  align-items: bottom; }
+
+.system__logo-item {
+  margin: auto 0 0 0;
+  padding: 0; }
+
+.system__logo-item img {
+  margin: 0;
+  padding: 0;
+  display: block; }
+
+.system__legend {
+  margin: 25px 0 0 0;
+  padding: 0;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff; }
+
+@media (min-width: 660px) {
+  .intro__download-link {
+    margin: 30px auto 0 auto; }
+  .system__logos {
+    margin: 45px auto 0 auto; }
+  .system__legend {
+    margin: 40px auto 0 auto; } }
+
+@media (min-width: 1200px) {
+  .intro__download-link {
+    margin: 50px auto 0 auto; }
+  .system__logos {
+    margin: 65px auto 0 auto; }
+  .system__legend {
+    margin: 60px auto 0 auto; } }
 
 .description {
   margin: 270px auto 0 auto;

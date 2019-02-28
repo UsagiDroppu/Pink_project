@@ -8,7 +8,8 @@
 	height: 395px;
 	width: $mobilewidth;
 	position: relative;
-	border: 1px solid red;
+	background: url("../img/iphone-5-in-hand.jpg") no-repeat top;
+	// z-index: -1;
 }
 
 .intro__download {
@@ -18,42 +19,93 @@
 	width: $mobilewidth;
 	position: absolute;
 	bottom: -270px;
-	border: 1px solid blue;
+	background-color: #283645;
 }
+
+.intro__download-link {
+	display: flex;
+	margin: 30px auto 0 auto;
+	border-radius: 50px;
+	width: 275px;
+	height: 50px;
+	border: 3px solid white;
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 18px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+
 
 @media (min-width: $tabletwidth){	
 	.intro {
 		width: $tabletwidth;
 		height: 620px;
+		background: url("../img/iphone-6.jpg") no-repeat top;
+		background-size: cover;
 	}
 
 	.intro__download {
 		position: static;
+		height: auto;
 		width: 300px;
-		height: 405px;
-		margin-left: 20px;
-		margin-top: 105px;
-		// height: 620px;
-		// border: 1px solid blue;
+		left: 20px;
+		top: 105px;
+		background: none;
 	}
 
 	.intro__slogan {
-		display: inline;
+		display: block;
+
+		margin: 0 auto;
+		padding-top: 80px;
+		width: 200px;
+		text-align: center;
+
+		font-weight: 300;
+		font-size: 40px;
+		line-height: auto;
+		color: #ffffff;
 	}
 }
 
 @media (min-width: $desktopwidth){
 	.intro {
+		margin: 0;
+		padding: 0;
 		width: $desktopwidth;
 		height: 850px;
+		position: static;
+		background: url("../img/iphone-7.jpg") no-repeat top;
 	}
 
 	.intro__download {
-		width: 385px;
-		height: 500px;
-		margin-left: 130px;
-		margin-top: 230px;
-		// height: 620px;
-		// border: 1px solid blue;
+		padding: 215px 0 0 130px;
+		position: static;
+		height: auto;
+		width: 300px;
+		// height: 500px;
+		margin: 0;
+	}
+
+	.intro__slogan {
+		display: block;
+
+		margin: 0 auto;
+		padding: 0;
+		width: 240px;
+		text-align: center;
+
+		font-weight: 300;
+		font-size: 50px;
+		line-height: auto;
+		color: #ffffff;
+	}
+
+	.intro__download-link {
+		margin: 60px auto 0 auto;
 	}
 }

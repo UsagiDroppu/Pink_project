@@ -1,34 +1,60 @@
 .main-header {
 	width: $mobilewidth;
 	margin: 0 auto;
+	background-color: #283645;
+
 }
 
 .main-menu {
 	margin: 0;
 	padding: 0;
-	// width: 320px;
-	// height: 325px;
 	list-style: none;
 }
 
 .main-menu__item {
-	// height: 65px;
 	width: $mobilewidth;
-	border: 1px solid black;
 	display: flex;
+	box-shadow: 0 1px 0px #000000, 0 2px 0px #485461;
+}
+
+.main-menu__item:last-child {
+	box-shadow: 0 1px 0px #000000;
+	margin: 0 0 1px 0;
 }
 
 .main-menu__link {
 	height: 65px;
-	// width: 320px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-grow: 1;
+	font-size: 18px;
+	line-height: 32px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #ffffff;
+	text-decoration: none;
 }
 
 .main-menu__item--logo {
 	height: 70px;
+}
+
+.main-menu__logo {
+	margin: 20px 0 0 20px;
+	background: url("../img/logotype-white-mobile.png");
+	width: 75px;
+	height: 22px;
+}
+
+.main-menu__item--logo {
+	position: relative;
+}
+
+.main-menu__close {
+	position: absolute;
+	right: 20px;
+	top: 20px;
 }
 
 @media (min-width: $tabletwidth){	
@@ -37,7 +63,7 @@
 	}
 
 	.main-menu {
-		// width: $tabletwidth;
+		
 	}
 
 	.main-menu__item {
@@ -45,13 +71,24 @@
 	}
 
 	.main-menu__link {
-		// width: $tabletwidth;
+		
 	}
 
 	.main-menu__item--logo {
 		height: 110px;
 	}
 
+	.main-menu__logo {
+		margin: 25px 0 0 20px;
+		background: url("../img/logotype-white-tablet.png") no-repeat;
+		width: 147px;
+		height: 40px;
+	}
+	
+	.main-menu__close {
+		right: 20px;
+		top: 45px;
+	}
 }
 
 @media (min-width: $desktopwidth){
@@ -61,31 +98,40 @@
 	}
 
 	.main-menu {
-		// width: $desktopwidth;
 		position: absolute;
 		display: flex;
-		margin: 0 130px;
+		z-index: 2;
+		margin: 0;
+		padding: 0 130px;
+		background-color: rgba(0, 0, 0, 0.3);
 		width: 940px;
 		justify-content: space-between;
 	}
 
 	.main-menu__item {
 		width: auto;
+		align-items: center;
+		height: 110px;
+		box-shadow: none;
 	}
 
 	.main-menu__link {
-		// width: auto;
 		flex-grow: 0;
+		text-transform: none;
+		font-size: 18px;
+		line-height: 18px;
+		font-weight: 400;
 	}
-
-	.main-menu__item {
-		height: 110px;
+	
+	.main-menu__logo {
+		align-self: flex-start;
+		margin: 20px 0 0 0;
+		background: url("../img/logotype-white-desktop.png") no-repeat;
+		width: 147px;
+		height: 40px;
 	}
-
-	.main-menu__item--logo {
-		margin-right: 90px;
-		width: 150px;
-
+	
+	.main-menu__close {
+		display: none;
 	}
-
 }
