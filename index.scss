@@ -5,8 +5,17 @@ $desktopwidth: 1200px;
 body {
 	padding: 0;
 	margin: 0;
+	width: $mobilewidth;
 	font-family: Open Sans, Arial, sans-serif;
 };
+
+@media (min-width: $tabletwidth){
+	width: auto;
+}
+
+@media (min-width: $desktopwidth){
+
+}
 
 @import 'main-header.scss';
 @import 'intro.scss';

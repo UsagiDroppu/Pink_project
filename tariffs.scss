@@ -1,10 +1,16 @@
 .tariffs {
+	// position: absolute;
 	margin: 130px auto 0 auto;
-	width: $mobilewidth;
-	border: 1px solid black;
+	// width: $mobilewidth;
+	border: 2px solid #e5e5e5;
 	border-collapse: collapse;
 }
 
 .tariffs__column {
-	border: 1px solid black;
+	border: 2px solid #e5e5e5;
+	min-width: 280px;
+}
+
+.tariffs__row {
+	height: 60px;
 }
