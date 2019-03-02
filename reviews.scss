@@ -40,33 +40,6 @@
 	color: #283645;
 }
 
-.reviews__controls {
-	display: flex;
-	list-style: none;
-	margin: 40px auto 0 auto;
-	padding: 0;
-	width: 59px;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.reviews__button {
-	margin: 0;
-	padding: 0;
-	height: 6px;
-	width: 6px;
-	background-color: #bec2c7;
-	border-radius: 3px;
-}
-
-.reviews__button--active {
-	height: 6px;
-	width: 6px;
-	border: 3px solid #283645;
-	background-color: #ffffff;
-	border-radius: 6px;
-}
-
 @media (min-width: $tabletwidth){
 	.reviews {
 		width: 620px;

@@ -89,40 +89,112 @@
 					<p class="reviews__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
 				</li>
 			</ul>
-			<ul class="reviews__controls">
-				<li class="reviews__button reviews__button--active"></li>
-				<li class="reviews__button"></li>
-				<li class="reviews__button"></li>
+			<ul class="controls">
+				<li class="controls__button controls__button--active"></li>
+				<li class="controls__button"></li>
+				<li class="controls__button"></li>
 			</ul>
 			<div class="reviews__arrow"></div>
 			<div class="reviews__arrow reviews__arrow--right"></div>
 		</section>
-
-		<table class="tariffs">
-			<tr class="tariffs__row">
-				<th class="tariffs__column">База</td>
-				<th class="tariffs__column">
-					<b>Стандарт</b>
-					<p>3,99 USD</p>
-				</td>
-				<th class="tariffs__column">Анлим</td>
-			</tr>
-			<tr class="tariffs__row">
-				<td class="tariffs__column">Розовый фильтр</td>
-				<td class="tariffs__column">Розовый фильтр</td>
-				<td class="tariffs__column">Розовый фильтр</td>
-			</tr>
-			<tr class="tariffs__row">
-				<td class="tariffs__column">Смайлики</td>
-				<td class="tariffs__column">Смайлики</td>
-				<td class="tariffs__column">Смайлики</td>
-			</tr>
-			<tr class="tariffs__row">
-				<td class="tariffs__column">Комментарии</td>
-				<td class="tariffs__column">Комментарии</td>
-				<td class="tariffs__column">Комментарии</td>
-			</tr>
-		</table>
+		
+		<div class="tarrifs-wrap">
+			<table class="tariffs">
+				<tr class="tariffs__row">
+					<th class="tariffs__head tariffs__column--mobile-hidden tariffs__head--none">
+						<b class="tariffs__tittle"></b>
+						<p class="tariffs__price"></p>
+					</th>
+					<th class="tariffs__head">
+						<b class="tariffs__tittle">База</b>
+						<p class="tariffs__price">1,99 USD</p>
+					</th>
+					<th class="tariffs__head">
+						<b class="tariffs__tittle">Стандарт</b>
+						<p class="tariffs__price">3,99 USD</p>
+						<img class="tariffs__hit" src="img/hit.png">
+					</th>
+					<th class="tariffs__head">
+						<b class="tariffs__tittle">Анлим</b>
+						<p class="tariffs__price">9,99 USD</p>
+					</th>
+				</tr>
+				<tr class="tariffs__row">
+					<td class="tariffs__column tariffs__column--mobile-hidden">
+						<p class="tariffs__name">Розовый фильтр</p>
+					</td>
+					<td class="tariffs__column">
+						<div class="tariffs__options">
+							<p class="tariffs__name">Розовый фильтр</p>
+							<img alt="Да" src="img/yes.png">
+						</div>
+					</td>
+					<td class="tariffs__column">
+						<div class="tariffs__options">
+							<p class="tariffs__name">Розовый фильтр</p>
+							<img alt="Да" src="img/yes.png">
+						</div>
+					</td>
+					<td class="tariffs__column">
+						<div class="tariffs__options">
+							<p class="tariffs__name">Розовый фильтр</p>
+							<img alt="Да" src="img/yes.png">
+						</div>
+					</td>
+				</tr>
+				<tr class="tariffs__row">
+					<td class="tariffs__column tariffs__column--mobile-hidden">
+						<p class="tariffs__name">Смайлики</p>
+					</td>
+					<td class="tariffs__column">
+						<div class="tariffs__options">
+							<p class="tariffs__name">Смайлики</p>
+							<img alt="Нет" src="img/no.png">
+						</div>
+					</td>
+					<td class="tariffs__column">
+						<div class="tariffs__options">
+							<p class="tariffs__name">Смайлики</p>
+							<img alt="Да" src="img/yes.png">
+						</div>
+					</td>
+					<td class="tariffs__column">
+						<div class="tariffs__options">
+							<p class="tariffs__name">Смайлики</p>
+							<img alt="Да" src="img/yes.png">
+						</div>
+					</td>
+				</tr>
+				<tr class="tariffs__row">
+					<td class="tariffs__column tariffs__column--mobile-hidden">
+						<p class="tariffs__name">Комментарии</p>
+					</td>
+					<td class="tariffs__column">
+						<div class="tariffs__options">
+							<p class="tariffs__name">Комментарии</p>
+							<img alt="Нет" src="img/no.png">
+						</div>
+					</td>
+					<td class="tariffs__column">
+						<div class="tariffs__options">
+							<p class="tariffs__name">Комментарии</p>
+							<img alt="Нет" src="img/no.png">
+						</div>
+					</td>
+					<td class="tariffs__column">
+						<div class="tariffs__options">
+							<p class="tariffs__name">Комментарии</p>
+							<img alt="Да" src="img/yes.png">
+						</div>
+					</td>
+				</tr>
+			</table>
+			<ul class="controls">
+				<li class="controls__button controls__button--active"></li>
+				<li class="controls__button"></li>
+				<li class="controls__button"></li>
+			</ul>
+		</div>
 
 		<section class="contacts">
 			<p class="contacts__questions">Остались вопросы?<br>Свяжитесь с нами!</p>
@@ -140,6 +212,7 @@
 					<p class="contacts__content">ул. Большая<br>Конюшенная, 19/8</p>
 				</li>
 			</ul>
+			<div class="contacts__map"><div class="contacts__overlay"></div></div>
 		</section>
 		<script src="index.js"></script>
 	</body>

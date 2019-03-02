@@ -1,6 +1,7 @@
 .contacts {
 	margin: 50px auto 0 auto;
 	width: $mobilewidth;
+	// height: 610px;
 	text-align: center;
 	font-size: 24px;
 }
@@ -8,14 +9,52 @@
 .contacts__list {
 	margin: 0;
 	padding: 0;
+	text-align: center;
 	list-style: none;
 }
 
 .contacts__item {
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 	width: 250px;
+	text-align: center;
+}
 
+.contacts__questions {
+	font-size: 24px;
+	line-height: auto;
+	font-weight: 300;
+	color: #283645;
+}
+
+.contacts__tittle {
+	font-size: 18px;
+	line-height: auto;
+	font-weight: 700;
+	color: #283645;
+}
+
+.contacts__content {
+	font-size: 18px;
+	line-height: auto;
+	font-weight: 400;
+	color: #d22856;
+}
+
+.contacts__map {
+	width: $mobilewidth;
+	height: 200px;
+	background: url("../img/map.png");
+	background-repeat: no-repeat;
+	background-position: 0 1px;
+}
+
+.contacts__overlay {
+	width: 0;
+	height: 0;
+	border-left: 160px solid transparent;
+	border-right: 160px solid transparent;
+	border-top: 35px solid white;
 }
 
 @media (min-width: $tabletwidth){	
@@ -27,15 +66,71 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-around;
+		margin: 0;
+		padding: 0;
 	}
 
 	.contacts__item {
-		// flex-shrink: 
+		margin: 0;
+		padding: 0;
+	}
+
+	.contacts__questions {
+		font-size: 40px;
+		line-height: auto;
+		font-weight: 300;
+		color: #283645;
+	}
+
+	.contacts__tittle {
+		font-size: 18px;
+		line-height: auto;
+		font-weight: 700;
+		color: #283645;
+	}
+
+	.contacts__content {
+		font-size: 24px;
+		line-height: auto;
+		font-weight: 400;
+		color: #d22856;
+	}
+
+	.contacts__map {
+		width: $tabletwidth;
+		height: 200px;
+		background: url("../img/map-tablet.png");
+		background-repeat: no-repeat;
+		background-position: 0 1px;
+	}
+
+	.contacts__overlay {
+		width: 0;
+		height: 0;
+		border-left: $tabletwidth/2 solid transparent;
+		border-right: $tabletwidth/2 solid transparent;
+		border-top: 70px solid #ffffff;
 	}
 }
 
 @media (min-width: $desktopwidth){
 	.contacts {
 		width: $desktopwidth;
+	}
+
+	.contacts__map {
+		width: $desktopwidth;
+		height: 502px;
+		background: url("../img/map-desktop.png");
+		background-repeat: no-repeat;
+		background-position: 0 1px;
+	}
+
+	.contacts__overlay {
+		width: 0;
+		height: 0;
+		border-left: $desktopwidth/2 solid transparent;
+		border-right: $desktopwidth/2 solid transparent;
+		border-top: 105px solid #ffffff;
 	}
 }

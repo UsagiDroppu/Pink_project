@@ -4,17 +4,25 @@ $desktopwidth: 1200px;
 
 body {
 	padding: 0;
-	margin: 0;
+	margin: 0 auto;
 	width: $mobilewidth;
 	font-family: Open Sans, Arial, sans-serif;
 };
 
 @media (min-width: $tabletwidth){
-	width: auto;
+	body {
+		padding: 0;
+		margin: 0 auto;
+		width: $tabletwidth;
+	};
 }
 
 @media (min-width: $desktopwidth){
-
+	body {
+		padding: 0;
+		margin: 0 auto;
+		width: $desktopwidth;
+	};
 }
 
 @import 'main-header.scss';
@@ -26,3 +34,4 @@ body {
 @import 'reviews.scss';
 @import 'tariffs.scss';
 @import 'contacts.scss';
+@import 'controls.scss';
