@@ -5,9 +5,11 @@
 .intro {
 	margin: 0;
 	padding: 0;
-	position: relative;
 	height: 395px;
 	width: $mobilewidth;
+	position: relative;
+	background: url("../img/iphone-5-in-hand.jpg") no-repeat top;
+	// z-index: -1;
 }
 
 .intro__download {
@@ -45,12 +47,12 @@
 	color: rgba(210, 40, 86, 0.3);
 }
 
-@media (min-width: $tabletwidth){
+@media (min-width: $tabletwidth){	
 	.intro {
-		margin: 0;
-		padding: 0;
 		width: $tabletwidth;
 		height: 620px;
+		background: url("../img/iphone-6.jpg") no-repeat top;
+		// background-size: cover;
 	}
 
 	.intro__download {
@@ -82,14 +84,17 @@
 		margin: 0;
 		padding: 0;
 		width: $desktopwidth;
-		height: 740px;
+		height: 850px;
+		position: static;
+		background: url("../img/iphone-7.jpg") no-repeat top;
 	}
 
 	.intro__download {
-		padding: 120px 0 0 130px;
+		padding: 215px 0 0 130px;
 		position: static;
 		height: auto;
 		width: 300px;
+		// height: 500px;
 		margin: 0;
 	}
 
