@@ -153,7 +153,8 @@
 		width: 22px;
 		height: 42px;
 		background: url("../img/left arrow.png") no-repeat;
-		opacity: 0.6;
+		opacity: 0.3;
+		cursor: pointer;
 	}
 
 	.reviews__arrow--right {
@@ -161,5 +162,13 @@
 		left: auto;
 		right: 130px;
 		transform: rotate(180deg);
+	}
+
+	.reviews__arrow:hover {
+		opacity: 0.6;
+	}
+
+	.reviews__arrow:active {
+		opacity: 0.1;
 	}
 }

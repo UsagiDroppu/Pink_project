@@ -19,7 +19,8 @@ body {
 .main-header {
   width: 320px;
   margin: 0 auto;
-  background-color: #283645; }
+  background-color: #283645;
+  background: url("../img/iphone-5-in-hand-png.jpg") no-repeat top; }
 
 .main-menu {
   margin: 0;
@@ -36,6 +37,7 @@ body {
   margin: 0 0 1px 0; }
 
 .main-menu__link {
+  background-color: #283645;
   height: 65px;
   display: flex;
   align-items: center;
@@ -48,9 +50,6 @@ body {
   color: #ffffff;
   text-decoration: none; }
 
-.main-menu__item--logo {
-  height: 70px; }
-
 .main-menu__logo {
   margin: 20px 0 0 20px;
   background: url("../img/logotype-white-mobile.png");
@@ -59,16 +58,41 @@ body {
   filter: grayscale(100%) brightness(500%); }
 
 .main-menu__item--logo {
+  height: 70px;
   position: relative; }
 
 .main-menu__close {
   position: absolute;
   right: 20px;
   top: 20px;
-  cursor: pointer; }
+  background: url("../img/close menu BTN copy.png");
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+  filter: grayscale(100%) brightness(500%); }
+
+.main-menu__open {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background: url("../img/open menu.png");
+  width: 50px;
+  height: 24px;
+  cursor: pointer;
+  filter: grayscale(100%) brightness(500%); }
+
+.main-menu__item:not(:first-child) {
+  display: none; }
+
+.main-menu__item--logo--open {
+  position: relative;
+  height: 66px; }
 
 .main-menu__logo:active {
   opacity: 0.3; }
+
+.main-menu__close:hover {
+  filter: none; }
 
 .main-menu__close:active {
   opacity: 0.3; }
@@ -96,7 +120,24 @@ body {
   .main-menu__close {
     right: 20px;
     top: 45px; }
+  .main-menu__open {
+    position: absolute;
+    right: 20px;
+    top: 45px;
+    background: url("../img/open menu.png");
+    width: 50px;
+    height: 24px;
+    cursor: pointer;
+    filter: grayscale(100%) brightness(500%); }
+  .main-menu__item--logo--open {
+    height: 110px;
+    position: relative; }
   .main-menu__logo:hover {
+    filter: none; }
+  .main-menu__logo:active {
+    filter: grayscale(100%);
+    opacity: 0.3; }
+  .main-menu__close:hover {
     filter: none; }
   .main-menu__close:active {
     opacity: 0.3; }
@@ -137,7 +178,24 @@ body {
     width: 147px;
     height: 40px; }
   .main-menu__close {
-    display: none; } }
+    display: none; }
+  .main-menu__link--active {
+    border-bottom: 2px solid #ffffff; }
+  .main-menu__open {
+    display: none; }
+  .main-menu__logo:hover {
+    filter: none; }
+  .main-menu__logo:active {
+    opacity: 0.3; }
+  .main-menu__close:hover {
+    filter: none; }
+  .main-menu__close:active {
+    opacity: 0.3; }
+  .main-menu__link:hover {
+    color: #d22856; }
+  .main-menu__link:active {
+    color: #ffffff;
+    opacity: 0.3; } }
 
 .intro__slogan {
   display: none; }
@@ -147,8 +205,7 @@ body {
   padding: 0;
   height: 395px;
   width: 320px;
-  position: relative;
-  background: url("../img/iphone-5-in-hand.jpg") no-repeat top; }
+  position: relative; }
 
 .intro__download {
   margin: 0;
@@ -173,6 +230,13 @@ body {
   line-height: 18px;
   color: #ffffff;
   text-decoration: none; }
+
+.intro__download-link:hover {
+  color: #d22856;
+  background: #ffffff; }
+
+.intro__download-link:active {
+  color: rgba(210, 40, 86, 0.3); }
 
 @media (min-width: 660px) {
   .intro {
@@ -563,12 +627,17 @@ body {
     width: 22px;
     height: 42px;
     background: url("../img/left arrow.png") no-repeat;
-    opacity: 0.6; }
+    opacity: 0.3;
+    cursor: pointer; }
   .reviews__arrow--right {
     position: absolute;
     left: auto;
     right: 130px;
-    transform: rotate(180deg); } }
+    transform: rotate(180deg); }
+  .reviews__arrow:hover {
+    opacity: 0.6; }
+  .reviews__arrow:active {
+    opacity: 0.1; } }
 
 .tarrifs-wrap {
   padding: 130px 0 0 0;
@@ -822,7 +891,8 @@ body {
   height: 6px;
   width: 6px;
   background-color: #bec2c7;
-  border-radius: 3px; }
+  border-radius: 3px;
+  cursor: pointer; }
 
 .controls__button--active {
   height: 6px;
@@ -830,6 +900,18 @@ body {
   border: 3px solid #283645;
   background-color: #ffffff;
   border-radius: 6px; }
+
+.controls__button:hover {
+  background-color: #7e868f; }
+
+.controls__button--active:hover {
+  background-color: #ffffff; }
+
+.controls__button:active {
+  background-color: #e9ebec; }
+
+.controls__button--active:active {
+  background-color: #ffffff; }
 
 @media (min-width: 660px) {
   .controls {
@@ -867,7 +949,8 @@ body {
     border-radius: 25px;
     justify-content: center;
     align-items: center;
-    border: 3px solid #e9ebec; }
+    border: 3px solid #e9ebec;
+    cursor: pointer; }
   .main-footer__soc-image {
     display: block;
     margin: 0 auto; }
@@ -880,8 +963,40 @@ body {
     line-height: 18PX;
     font-weight: 400;
     color: #283645; }
+  .main-footer__htmlacademy-logo {
+    cursor: pointer; }
   .main-footer__pink-logo-desktop {
-    display: none; } }
+    display: none; }
+  .main-footer__pink-tablet {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: bottom;
+    cursor: pointer; }
+  .main-footer__pink-item-tablet {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .main-footer__pink-item-tablet:nth-child(2) {
+    margin: 17px 0 0 10px;
+    padding: 0;
+    filter: grayscale(100%) brightness(0%); }
+  .main-footer__pink-tablet:hover .main-footer__pink-item-tablet:nth-child(2) {
+    filter: none; }
+  .main-footer__pink-tablet:active {
+    filter: grayscale(100%) brightness(0%);
+    opacity: 0.3; }
+  .main-footer__soc-item:hover {
+    border: 3px solid #000000; }
+  .main-footer__soc-item:active {
+    border: 3px solid #000000;
+    opacity: 0.3; }
+  .main-footer__htmlacademy-logo:hover {
+    filter: grayscale(100%) brightness(0%); }
+  .main-footer__htmlacademy-logo:active {
+    filter: grayscale(100%) brightness(0%);
+    opacity: 0.3; } }
 
 @media (min-width: 1200px) {
   .main-footer {
@@ -889,5 +1004,12 @@ body {
     margin: 70px auto; }
   .main-footer__pink-logo-desktop {
     display: block; }
-  .main-footer__pink-logo-tablet {
-    display: none; } }
+  .main-footer__pink-tablet {
+    display: none; }
+  .main-footer__pink-logo-desktop {
+    cursor: pointer; }
+  .main-footer__pink-logo-desktop:hover {
+    filter: grayscale(100%) brightness(0%); }
+  .main-footer__pink-logo-desktop:active {
+    filter: grayscale(100%) brightness(0%);
+    opacity: 0.3; } }

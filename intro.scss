@@ -8,7 +8,7 @@
 	height: 395px;
 	width: $mobilewidth;
 	position: relative;
-	background: url("../img/iphone-5-in-hand.jpg") no-repeat top;
+	// background: url("../img/iphone-5-in-hand.jpg") no-repeat top;
 	// z-index: -1;
 }
 
@@ -38,8 +38,13 @@
 	text-decoration: none;
 }
 
-.intro__download-link {
-	
+.intro__download-link:hover {
+	color: #d22856;
+	background: #ffffff;
+}
+
+.intro__download-link:active {
+	color: rgba(210, 40, 86, 0.3);
 }
 
 @media (min-width: $tabletwidth){	

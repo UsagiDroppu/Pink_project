@@ -1,8 +1,9 @@
 .main-header {
 	width: $mobilewidth;
 	margin: 0 auto;
+	// height: 462px;
 	background-color: #283645;
-
+	background: url("../img/iphone-5-in-hand-png.jpg") no-repeat top;
 }
 
 .main-menu {
@@ -23,6 +24,7 @@
 }
 
 .main-menu__link {
+	background-color: #283645;
 	height: 65px;
 	display: flex;
 	align-items: center;
@@ -36,10 +38,6 @@
 	text-decoration: none;
 }
 
-.main-menu__item--logo {
-	height: 70px;
-}
-
 .main-menu__logo {
 	margin: 20px 0 0 20px;
 	background: url("../img/logotype-white-mobile.png");
@@ -49,6 +47,7 @@
 }
 
 .main-menu__item--logo {
+	height: 70px;
 	position: relative;
 }
 
@@ -56,11 +55,43 @@
 	position: absolute;
 	right: 20px;
 	top: 20px;
+	background: url("../img/close menu BTN copy.png");
+	width: 23px;
+	height: 23px;
 	cursor: pointer;
+	filter: grayscale(100%) brightness(500%);
 }
+
+/////////////////////////////////////////////////////
+
+.main-menu__open {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	background: url("../img/open menu.png");
+	width: 50px;
+	height: 24px;
+	cursor: pointer;
+	filter: grayscale(100%) brightness(500%);
+}
+
+.main-menu__item:not(:first-child) {
+	display: none;
+}
+
+.main-menu__item--logo--open {
+	position: relative;
+	height: 66px;
+}
+
+///////////////////////////////////////////////////
 
 .main-menu__logo:active {
 	opacity: 0.3;
+}
+
+.main-menu__close:hover {
+	filter: none;
 }
 
 .main-menu__close:active {
@@ -102,13 +133,39 @@
 		top: 45px;
 	}
 
-	
+/////////////////////////////////////////////////////
+
+	.main-menu__open {
+		position: absolute;
+		right: 20px;
+		top: 45px;
+		background: url("../img/open menu.png");
+		width: 50px;
+		height: 24px;
+		cursor: pointer;
+		filter: grayscale(100%) brightness(500%);
+	}
+
+	.main-menu__item--logo--open {
+		height: 110px;
+		position: relative;
+	}
+
+///////////////////////////////////////////////////
+
 
 	.main-menu__logo:hover {
 		filter: none;
 	}
 
-
+	.main-menu__logo:active {
+		filter: grayscale(100%);
+		opacity: 0.3;
+	}
+	
+	.main-menu__close:hover {
+		filter: none;
+	}
 
 	.main-menu__close:active {
 		opacity: 0.3;
@@ -167,4 +224,37 @@
 	.main-menu__close {
 		display: none;
 	}
+
+	.main-menu__link--active {
+		border-bottom: 2px solid #ffffff;
+	}
+
+	.main-menu__open {
+		display: none;
+	}
+
+	.main-menu__logo:hover {
+		filter: none;
+	}
+
+	.main-menu__logo:active {
+		opacity: 0.3;
+	}
+	
+	.main-menu__close:hover {
+		filter: none;
+	}
+
+	.main-menu__close:active {
+		opacity: 0.3;
+	}
+
+	.main-menu__link:hover {
+		color: #d22856;
+	} 
+
+	.main-menu__link:active{
+		color: #ffffff;
+		opacity: 0.3;
+	} 
 }
