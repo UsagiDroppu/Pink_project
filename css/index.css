@@ -18,7 +18,7 @@ body {
 
 .main-header {
   width: 320px;
-  background: url("../img/iphone-5-in-hand-png.jpg") #283645 no-repeat bottom;
+  background: url("../img/back-mobile.jpg") #283645 no-repeat bottom;
   margin: 0 auto; }
 
 .main-menu {
@@ -109,7 +109,7 @@ body {
 @media (min-width: 660px) {
   .main-header {
     width: 660px;
-    background: url("../img/iphone-tablet.jpg") no-repeat bottom; }
+    background: url("../img/back-tablet.jpg") no-repeat bottom; }
   .main-menu__item {
     width: 660px; }
   .main-menu__item--logo {
@@ -140,7 +140,7 @@ body {
 @media (min-width: 1200px) {
   .main-header {
     width: 1200px;
-    background: url("../img/iphone-7.jpg") no-repeat bottom; }
+    background: url("../img/back-desktop.jpg") no-repeat bottom; }
   .main-menu {
     display: flex;
     z-index: 2;
@@ -198,6 +198,22 @@ body {
   height: 395px;
   width: 320px; }
 
+.intro--photo {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: 170px;
+  width: 320px; }
+
+.intro__tittle {
+  margin: 0;
+  padding: 35px 0 0 0;
+  text-align: center;
+  font-size: 24px;
+  line-height: auto;
+  font-weight: 300;
+  color: #ffffff; }
+
 .intro__download {
   margin: 0;
   padding: 0;
@@ -235,6 +251,19 @@ body {
     padding: 0;
     width: 660px;
     height: 620px; }
+  .intro--photo {
+    margin: 0;
+    padding: 0;
+    width: 660px;
+    height: 329px; }
+  .intro__tittle {
+    margin: 0;
+    padding: 80px 0 0 0;
+    text-align: center;
+    font-size: 50px;
+    line-height: auto;
+    font-weight: 300;
+    color: #ffffff; }
   .intro__download {
     position: static;
     height: auto;
@@ -259,6 +288,19 @@ body {
     padding: 0;
     width: 1200px;
     height: 740px; }
+  .intro--photo {
+    margin: 0;
+    padding: 0;
+    width: 1200px;
+    height: 284px; }
+  .intro__tittle {
+    margin: 0;
+    padding: 70px 0 0 0;
+    text-align: center;
+    font-size: 50px;
+    line-height: auto;
+    font-weight: 300;
+    color: #ffffff; }
   .intro__download {
     padding: 120px 0 0 130px;
     position: static;

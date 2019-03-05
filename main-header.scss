@@ -1,6 +1,6 @@
 .main-header {
 	width: $mobilewidth;
-	background: url("../img/iphone-5-in-hand-png.jpg") #283645 no-repeat bottom;
+	background: url("../img/back-mobile.jpg") #283645 no-repeat bottom;
 	margin: 0 auto;
 }
 
@@ -114,7 +114,7 @@
 @media (min-width: $tabletwidth){
 	.main-header {
 		width: $tabletwidth;
-		background: url("../img/iphone-tablet.jpg") no-repeat bottom;
+		background: url("../img/back-tablet.jpg") no-repeat bottom;
 	}
 
 	.main-menu__item {
@@ -171,7 +171,7 @@
 @media (min-width: $desktopwidth){
 	.main-header {
 		width: $desktopwidth;
-		background: url("../img/iphone-7.jpg") no-repeat bottom;
+		background: url("../img/back-desktop.jpg") no-repeat bottom;
 	}
 
 	.main-menu {

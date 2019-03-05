@@ -10,6 +10,24 @@
 	width: $mobilewidth;
 }
 
+.intro--photo {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	height: 170px;
+	width: $mobilewidth;
+}
+
+.intro__tittle {
+	margin: 0;
+	padding: 35px 0 0 0;
+	text-align: center;
+	font-size: 24px;
+	line-height: auto;
+	font-weight: 300;
+	color: #ffffff;
+}
+
 .intro__download {
 	margin: 0;
 	padding: 0;
@@ -53,6 +71,23 @@
 		height: 620px;
 	}
 
+	.intro--photo {
+		margin: 0;
+		padding: 0;
+		width: $tabletwidth;
+		height: 329px;
+	}
+
+	.intro__tittle {
+		margin: 0;
+		padding: 80px 0 0 0;
+		text-align: center;
+		font-size: 50px;
+		line-height: auto;
+		font-weight: 300;
+		color: #ffffff;
+	}
+
 	.intro__download {
 		position: static;
 		height: auto;
@@ -83,6 +118,23 @@
 		padding: 0;
 		width: $desktopwidth;
 		height: 740px;
+	}
+
+	.intro--photo {
+		margin: 0;
+		padding: 0;
+		width: $desktopwidth;
+		height: 284px;
+	}
+
+	.intro__tittle {
+		margin: 0;
+		padding: 70px 0 0 0;
+		text-align: center;
+		font-size: 50px;
+		line-height: auto;
+		font-weight: 300;
+		color: #ffffff;
 	}
 
 	.intro__download {
